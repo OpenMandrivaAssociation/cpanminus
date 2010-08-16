@@ -1,5 +1,5 @@
 %define upstream_name    App-cpanminus
-%define upstream_version 0.9936
+%define upstream_version 1.0010
 
 Name:       cpanminus
 Version:    %perl_convert_version %{upstream_version}
@@ -47,7 +47,6 @@ rm -rf %buildroot
 %defattr(-,root,root)
 %doc Changes META.yml README
 %{_bindir}/cpanm
+%{_mandir}/man1/*
 %{_mandir}/man3/*
 %perl_vendorlib/*
-
-
