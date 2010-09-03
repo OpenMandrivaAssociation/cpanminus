@@ -1,5 +1,5 @@
 %define upstream_name    App-cpanminus
-%define upstream_version 1.0010
+%define upstream_version 1.0012
 
 Name:       cpanminus
 Version:    %perl_convert_version %{upstream_version}
