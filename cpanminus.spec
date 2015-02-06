@@ -7,7 +7,7 @@
 
 Name:       cpanminus
 Version:    %perl_convert_version %{upstream_version}
-Release:    4
+Release:    5
 
 Summary:    Get, unpack, build and install modules from CPAN
 License:    GPL+ or Artistic
