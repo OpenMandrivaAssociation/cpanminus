@@ -1,19 +1,19 @@
 %define upstream_name    App-cpanminus
-%define upstream_version 1.5018
+%define upstream_version 1.7049
 
 %if %{_use_internal_dependency_generator}
 %define __noautoreq 'perl\\(App::cpanminus::script\\)'
 %endif
 
 Name:       cpanminus
-Version:    %perl_convert_version %{upstream_version}
-Release:    5
+Version:    %{upstream_version}
+Release:    1
 
 Summary:    Get, unpack, build and install modules from CPAN
 License:    GPL+ or Artistic
 Group:      Development/Perl
-Url:        https://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/App/%{upstream_name}-%{upstream_version}.tar.gz
+Url:        https://github.com/miyagawa/cpanminus
+Source0:    https://cpan.metacpan.org/authors/id/M/MI/MIYAGAWA/App-cpanminus-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires: perl(ExtUtils::Install)
