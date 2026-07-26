@@ -1,19 +1,17 @@
 %define upstream_name    App-cpanminus
-%define upstream_version 1.7049
-
 %if %{_use_internal_dependency_generator}
 %define __noautoreq 'perl\\(App::cpanminus::script\\)'
 %endif
 
 Name:       cpanminus
-Version:    %{upstream_version}
-Release:    1
+Version:    1.7049
+Release:    2
 
 Summary:    Get, unpack, build and install modules from CPAN
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        https://github.com/miyagawa/cpanminus
-Source0:    https://cpan.metacpan.org/authors/id/M/MI/MIYAGAWA/App-cpanminus-%{upstream_version}.tar.gz
+Source0:    https://cpan.metacpan.org/authors/id/M/MI/MIYAGAWA/App-cpanminus-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires: perl(ExtUtils::Install)
@@ -32,7 +30,7 @@ but it's maintainable and extensible with plugins and friendly to shell
 scripting. When running, it requires only 10MB of RAM.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
